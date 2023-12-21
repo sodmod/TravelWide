@@ -25,7 +25,7 @@ class Navbar extends Component<{}, NavbarState> {
     return (
       <>
         <nav className="NavbarItems">
-          <h1 className="navbar-logo">TravelWide</h1>
+          <h1 className="navbar-logo">Travel</h1>
 
           <div className="menu-icons" onClick={this.handleMenuClick}>
             <i
@@ -36,7 +36,7 @@ class Navbar extends Component<{}, NavbarState> {
           <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
             {MenuItems.map((items, index) => {
               return (
-                <li key={index}>
+                <li key={index} onClick={this.handleMenuClick}>
                   <Link to={items?.url} className={items?.classname}>
                     <i className={items?.icon}></i>
                     {items?.title}
