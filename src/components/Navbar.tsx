@@ -7,8 +7,10 @@ interface NavbarState {
   clicked: boolean;
 }
 
-class Navbar extends Component<{}, NavbarState> {
-  constructor(props: {}) {
+interface NavbarProp {}
+
+class Navbar extends Component<NavbarProp, NavbarState> {
+  constructor(props: NavbarProp) {
     super(props);
     this.state = {
       clicked: false,

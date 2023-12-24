@@ -1,4 +1,6 @@
+import Destination from "../components/Destination";
 import Hero from "../components/Hero";
+import Trip from "../components/Trip";
 
 interface HeroParams {
   cName: string;
@@ -25,6 +27,8 @@ function Home() {
     <>
       <div>
         <Hero {...objects} />
+        <Destination />
+        <Trip />
       </div>
     </>
   );
