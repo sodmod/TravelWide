@@ -1,3 +1,4 @@
+import ContactForm from "../components/ContactForm";
 import Hero from "../components/Hero";
 
 interface HeroParams {
@@ -23,9 +24,8 @@ function Contact() {
   };
   return (
     <>
-      <div>
-        <Hero {...objects} />
-      </div>
+      <Hero {...objects} />
+      <ContactForm />
     </>
   );
 }

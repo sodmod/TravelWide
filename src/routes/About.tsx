@@ -1,3 +1,4 @@
+import AboutUs from "../components/AboutUs";
 import Hero from "../components/Hero";
 interface HeroParams {
   cName: string;
@@ -22,9 +23,8 @@ function About() {
   };
   return (
     <>
-      <div>
-        <Hero {...objects} />
-      </div>
+      <Hero {...objects} />
+      <AboutUs />
     </>
   );
 }

@@ -1,4 +1,5 @@
 import Hero from "../components/Hero";
+import Trip from "../components/Trip";
 
 interface HeroParams {
   cName: string;
@@ -23,9 +24,8 @@ function Service() {
   };
   return (
     <>
-      <div>
-        <Hero {...objects} />
-      </div>
+      <Hero {...objects} />
+      <Trip />
     </>
   );
 }

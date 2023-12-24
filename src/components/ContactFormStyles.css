@@ -1,0 +1,40 @@
+.form-container {
+  margin: 4rem 6rem;
+  color: #2a2a2a;
+}
+
+.form-container form {
+  padding-top: 1rem;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.form-container input {
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid #2a2a2a;
+}
+
+.form-container textarea {
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid #2a2a2a;
+}
+
+.form-container button:hover {
+  background-color: #2a2a2a;
+}
+
+@media screen and(max-width:850px) {
+  .form-container {
+    margin: 4rem 2rem;
+  }
+
+  .form-container form {
+    padding-top: 2rem;
+    width: 90%;
+  }
+}

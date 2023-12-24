@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, ReactNode } from "react";
 import "./DestinationStyle.css";
 
 interface image {
@@ -17,7 +17,7 @@ class DestinationData extends Component<{ data: DestinationData1[] }> {
     super(props);
   }
 
-  render() {
+  render(): ReactNode {
     return (
       <>
         {this.props.data.map((data, index) => {
